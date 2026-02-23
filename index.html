@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AmirTV | تحميل تطبيق مشاهدة المباريات</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Cairo', sans-serif;
+    }
+
+    body{
+      background: radial-gradient(circle at top,#3b0a6b,#0a0515 70%);
+      color:white;
+      overflow-x:hidden;
+    }
+
+    section{
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    h1{
+      font-size:60px;
+      font-weight:900;
+      margin-bottom:10px;
+    }
+
+    h2{
+      font-size:32px;
+      margin-bottom:40px;
+    }
+
+    p{
+      opacity:.9;
+      line-height:1.8;
+    }
+
+    /* HERO */
+    .hero{
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:80px;
+      font-weight:900;
+      color:#b36cff;
+    }
+
+    .subtitle{
+      margin:20px 0 40px;
+      font-size:22px;
+    }
+
+    /* BUTTONS */
+    .btns{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    .btn{
+      padding:16px 40px;
+      border-radius:40px;
+      font-weight:bold;
+      text-decoration:none;
+      transition:.3s;
+      box-shadow:0 10px 25px rgba(0,0,0,.4);
+    }
+
+    .download{
+      background:#8b2cff;
+      color:white;
+    }
+
+    .telegram{
+      background:#1da1f2;
+      color:white;
+    }
+
+    .btn:hover{
+      transform:translateY(-5px) scale(1.05);
+    }
+
+    /* FEATURES */
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .card{
+      background:rgba(255,255,255,.05);
+      padding:30px;
+      border-radius:20px;
+      backdrop-filter:blur(10px);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      background:rgba(255,255,255,.1);
+    }
+
+    /* GALLERY */
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:15px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .gallery img{
+      width:100%;
+      border-radius:20px;
+      transition:.3s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.05);
+    }
+
+    footer{
+      padding:40px;
+      background:#0b0817;
+      font-size:14px;
+      opacity:.7;
+    }
+
+    @media(max-width:600px){
+      h1{font-size:40px}
+      .logo{font-size:55px}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="logo">AmirTV</div>
+    <p class="subtitle">
+      أفضل تطبيق لمشاهدة مباريات كرة القدم بجودة عالية وبث مباشر
+    </p>
+
+    <div class="btns">
+      <a class="btn download" href="https://github.com/amer1iq/amritv/releases/download/v1.0/AmirTV.apk">
+        ⬇ تحميل التطبيق للأندرويد
+      </a>
+
+      <a class="btn telegram" href="https://t.me/AmirTviq" target="_blank">
+        📢 قناة تيليجرام
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section>
+    <h2>مميزات التطبيق</h2>
+
+    <div class="features">
+      <div class="card">⚽ بث مباشر لجميع المباريات</div>
+      <div class="card">📺 جودة عالية HD / FHD</div>
+      <div class="card">🚀 سيرفرات سريعة بدون تقطيع</div>
+      <div class="card">📱 يعمل على جميع أجهزة الأندرويد</div>
+      <div class="card">🔔 إشعارات عند بدء المباريات</div>
+      <div class="card">🆓 مجاني بالكامل</div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section>
+    <h2>صور من التطبيق</h2>
+
+    <div class="gallery">
+      <!-- ارفع صورك هنا -->
+      <img src="s1.jpg" alt="">
+      <img src="s2.jpg" alt="">
+      <img src="s3.jpg" alt="">
+      <img src="s4.jpg" alt="">
+    </div>
+  </section>
+
+  <footer>
+    © 2026 AmirTV - جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
